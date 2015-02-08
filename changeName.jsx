@@ -1,0 +1,1 @@
+﻿var docRef = app.activeDocument; var changeName = {  start: function(){    var n = docRef.layers.length;	    for(var i=0; i<n; ++i) {        var layer = docRef.layers[i];        var lyr_name = layer.name;        layer.name = "#"+lyr_name;    }  }}changeName.start();
